@@ -13,7 +13,7 @@
   <title>To-Do List Board</title>
 </head>
 
-<body>
+<body onload="loadTasks()">
   <div class="dashboard">
 
     <!-- Search bar-->
@@ -55,13 +55,13 @@
       <!-- Add task bar-->
       <section class="search-task">
         <input type="text" placeholder="Add a task" id="task-input">
-        <button onclick="addTask()" class="btn btn-outline-primary">Add</button>
+        <button id="add" onclick="addTask()" class="btn btn-outline-primary">Add</button>
       </section>
     </div>
 
   </div>
 
-  <script src="script.js" defer></script> <!--3ashan n delay el js execution seka wehna bnbda2-->
+  <script type="module" src="script.js"></script>
 
 </body>
 
