@@ -18,7 +18,7 @@
 
     <!-- Search bar-->
     <section class="search-task">
-      <input type="text" placeholder="Search for a task" id="task-input">
+      <input type="text" placeholder="Search for a task" id="search-input">
       <button class="btn btn-outline-secondary">Search</button>
     </section>
 
@@ -31,28 +31,8 @@
             <div class="card-header tasks bg-primary text-white">
               Pending Tasks
             </div>
-            <ul class="list-group">
-              <li class="list-group-item d-flex align-items-center">
-                Task 1
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Done</button>
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-center">
-                Task 2
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Done</button>
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-center">
-                Task 3
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Done</button>
-                </div>
-              </li>
+            <ul class="list-group" id="202">
+              <!---->
             </ul>
           </div>
         </div>
@@ -63,25 +43,8 @@
             <div class="card-header bg-success text-white">
               Completed Tasks
             </div>
-            <ul class="list-group">
-              <li class="list-group-item d-flex align-items-center">
-                Completed Task 1
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-center">
-                Completed Task 2
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-center">
-                Completed Task 3
-                <div class="btn-group ms-auto">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
-                </div>
-              </li>
+            <ul class="list-group" id="200">
+              <!---->
             </ul>
           </div>
         </div>
@@ -92,11 +55,13 @@
       <!-- Add task bar-->
       <section class="search-task">
         <input type="text" placeholder="Add a task" id="task-input">
-        <button class="btn btn-outline-primary">Add</button>
+        <button onclick="addTask()" class="btn btn-outline-primary">Add</button>
       </section>
     </div>
 
   </div>
+
+  <script src="script.js" defer></script> <!--3ashan n delay el js execution seka wehna bnbda2-->
 
 </body>
 
