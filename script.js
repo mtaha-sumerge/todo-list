@@ -66,12 +66,32 @@ function completeTask(button) {
     console.log("completed_tasks:", completed_tasks);
 
     // 3ashan nsheel el done button
+    li.className = "list-group-item d-flex align-items-center task-item"
     li.innerHTML = `
     ${taskName}
     <div class="btn-group ms-auto">
     <button type="button" onclick="deleteTask(this)" class="btn btn-sm btn-outline-danger">Delete</button>
     </div>
 `;
+    // li.classList.add('task-item');
 
     pending_tasks_list.appendChild(li);
+}
+
+function searchTask() {
+
+  const query = document.getElementById("search-input").value.toLowerCase(); // Not case sensitive
+  console.log(query);
+
+  const itemsList = Array.from(document.getElementsByClassName("task-item"));
+
+  // Han3ady 3ala kol el items w nelghy el display bta3 el msh by match el query
+  itemsList.forEach(li => {
+        const taskName = li.childNodes[0].textContent.trim().toLowerCase();
+        if (taskName.includes(query)) {
+            // console.log(true);
+            li.style.removeProperty("display");
+        } else li.style.setProperty("display", "none", "important");
+    });
+
 }
