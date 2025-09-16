@@ -1,0 +1,46 @@
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}   
+
+.dashboard {
+  background: #fff;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.search-task {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-task input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item label {
+  flex: 1;
+  cursor: pointer;
+}
